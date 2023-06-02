@@ -1,0 +1,83 @@
+\hypertarget{classnode__c__print__dist__spd_1_1_print___dist___spd}{}\doxysection{node\+\_\+c\+\_\+print\+\_\+dist\+\_\+spd.\+Print\+\_\+\+Dist\+\_\+\+Spd Class Reference}
+\label{classnode__c__print__dist__spd_1_1_print___dist___spd}\index{node\_c\_print\_dist\_spd.Print\_Dist\_Spd@{node\_c\_print\_dist\_spd.Print\_Dist\_Spd}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classnode__c__print__dist__spd_1_1_print___dist___spd_ad3f0805a3b5d184588b24aedc462de7b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{classnode__c__print__dist__spd_1_1_print___dist___spd_a737b3fd69ba8d2d66a23389f194357c9}{outcome\+\_\+callback}} (self, msg)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classnode__c__print__dist__spd_1_1_print___dist___spd_a5a85f95cfa465c7f2a5a7292fa4e4fd3}\label{classnode__c__print__dist__spd_1_1_print___dist___spd_a5a85f95cfa465c7f2a5a7292fa4e4fd3}} 
+{\bfseries F}
+\item 
+\mbox{\Hypertarget{classnode__c__print__dist__spd_1_1_print___dist___spd_a423d8756d49bd5e422689cea1ee09296}\label{classnode__c__print__dist__spd_1_1_print___dist___spd_a423d8756d49bd5e422689cea1ee09296}} 
+{\bfseries sub\+\_\+pos}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classnode__c__print__dist__spd_1_1_print___dist___spd_a53cd734f89b5f0048f7875fd775421c6}\label{classnode__c__print__dist__spd_1_1_print___dist___spd_a53cd734f89b5f0048f7875fd775421c6}} 
+{\bfseries x\+\_\+target} = rospy.\+get\+\_\+param(\char`\"{}desired\+\_\+pos\+\_\+x\char`\"{})
+\item 
+\mbox{\Hypertarget{classnode__c__print__dist__spd_1_1_print___dist___spd_a4b12f4cdde7e3eb49d5f770131fe83c9}\label{classnode__c__print__dist__spd_1_1_print___dist___spd_a4b12f4cdde7e3eb49d5f770131fe83c9}} 
+{\bfseries y\+\_\+target} = rospy.\+get\+\_\+param(\char`\"{}desired\+\_\+pos\+\_\+y\char`\"{})
+\item 
+\mbox{\Hypertarget{classnode__c__print__dist__spd_1_1_print___dist___spd_a30b5a4de8f504699c6f3d5e4657c69c7}\label{classnode__c__print__dist__spd_1_1_print___dist___spd_a30b5a4de8f504699c6f3d5e4657c69c7}} 
+{\bfseries x\+\_\+2w\+\_\+robot} = msg.\+msg\+\_\+pos\+\_\+x
+\item 
+\mbox{\Hypertarget{classnode__c__print__dist__spd_1_1_print___dist___spd_a44553d55997a089ce303aa212c8bcf3e}\label{classnode__c__print__dist__spd_1_1_print___dist___spd_a44553d55997a089ce303aa212c8bcf3e}} 
+{\bfseries y\+\_\+2w\+\_\+robot} = msg.\+msg\+\_\+pos\+\_\+y
+\item 
+\mbox{\Hypertarget{classnode__c__print__dist__spd_1_1_print___dist___spd_a3523d6fd220b9e1b2d950c7ec8c8ae6f}\label{classnode__c__print__dist__spd_1_1_print___dist___spd_a3523d6fd220b9e1b2d950c7ec8c8ae6f}} 
+{\bfseries distance} = round(math.\+dist(\mbox{[}x\+\_\+target, y\+\_\+target\mbox{]}, \mbox{[}x\+\_\+2w\+\_\+robot, y\+\_\+2w\+\_\+robot\mbox{]}),2)
+\item 
+\mbox{\Hypertarget{classnode__c__print__dist__spd_1_1_print___dist___spd_a4b9e3c85ddc643c543f106a4f3772b32}\label{classnode__c__print__dist__spd_1_1_print___dist___spd_a4b9e3c85ddc643c543f106a4f3772b32}} 
+{\bfseries vel\+\_\+x} = msg.\+msg\+\_\+vel\+\_\+x
+\item 
+\mbox{\Hypertarget{classnode__c__print__dist__spd_1_1_print___dist___spd_a382632e53073e2474ebe4727e92a12fa}\label{classnode__c__print__dist__spd_1_1_print___dist___spd_a382632e53073e2474ebe4727e92a12fa}} 
+{\bfseries vel\+\_\+y} = msg.\+msg\+\_\+vel\+\_\+y
+\item 
+\mbox{\Hypertarget{classnode__c__print__dist__spd_1_1_print___dist___spd_aa3227670ff44a51e4380708af43401a6}\label{classnode__c__print__dist__spd_1_1_print___dist___spd_aa3227670ff44a51e4380708af43401a6}} 
+{\bfseries avg\+\_\+spd} = round(math.\+sqrt(vel\+\_\+x$\ast$$\ast$2 + vel\+\_\+y$\ast$$\ast$2),2)
+\item 
+\mbox{\Hypertarget{classnode__c__print__dist__spd_1_1_print___dist___spd_a2ea2ebc6d7d52779bec6831bb7df0711}\label{classnode__c__print__dist__spd_1_1_print___dist___spd_a2ea2ebc6d7d52779bec6831bb7df0711}} 
+{\bfseries recent\+\_\+time}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classnode__c__print__dist__spd_1_1_print___dist___spd_ad3f0805a3b5d184588b24aedc462de7b}\label{classnode__c__print__dist__spd_1_1_print___dist___spd_ad3f0805a3b5d184588b24aedc462de7b}} 
+\index{node\_c\_print\_dist\_spd.Print\_Dist\_Spd@{node\_c\_print\_dist\_spd.Print\_Dist\_Spd}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!node\_c\_print\_dist\_spd.Print\_Dist\_Spd@{node\_c\_print\_dist\_spd.Print\_Dist\_Spd}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def node\+\_\+c\+\_\+print\+\_\+dist\+\_\+spd.\+Print\+\_\+\+Dist\+\_\+\+Spd.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This is the constructor method of the *Print_Dist_Spd* class.
+It initializes some variables and sets up a subscriber to 
+listen to the *posxy_velxy* topic.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classnode__c__print__dist__spd_1_1_print___dist___spd_a737b3fd69ba8d2d66a23389f194357c9}\label{classnode__c__print__dist__spd_1_1_print___dist___spd_a737b3fd69ba8d2d66a23389f194357c9}} 
+\index{node\_c\_print\_dist\_spd.Print\_Dist\_Spd@{node\_c\_print\_dist\_spd.Print\_Dist\_Spd}!outcome\_callback@{outcome\_callback}}
+\index{outcome\_callback@{outcome\_callback}!node\_c\_print\_dist\_spd.Print\_Dist\_Spd@{node\_c\_print\_dist\_spd.Print\_Dist\_Spd}}
+\doxysubsubsection{\texorpdfstring{outcome\_callback()}{outcome\_callback()}}
+{\footnotesize\ttfamily def node\+\_\+c\+\_\+print\+\_\+dist\+\_\+spd.\+Print\+\_\+\+Dist\+\_\+\+Spd.\+outcome\+\_\+callback (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{msg }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This is the callback function that gets called each time 
+a new message is received on the *posxy_velxy* topic. 
+
+It extracts the necessary information from the message
+and calculates the distance and average speed. Then, it
+updates the value of robot current velocity and distance 
+from target.
+
+Finally, it prints out the distance and speed information.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/root/\+Assignment\+\_\+2/src/\+Assignment\+\_\+2\+\_\+\+T\+A\+K\+E\+L\+E\+\_\+\+R\+T1/assignment\+\_\+2\+\_\+2022/scripts/node\+\_\+c\+\_\+print\+\_\+dist\+\_\+spd.\+py\end{DoxyCompactItemize}

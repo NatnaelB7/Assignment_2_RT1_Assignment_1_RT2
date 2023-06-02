@@ -1,0 +1,45 @@
+\hypertarget{namespacenode__c__print__dist__spd}{}\doxysection{node\+\_\+c\+\_\+print\+\_\+dist\+\_\+spd Namespace Reference}
+\label{namespacenode__c__print__dist__spd}\index{node\_c\_print\_dist\_spd@{node\_c\_print\_dist\_spd}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classnode__c__print__dist__spd_1_1_print___dist___spd}{Print\+\_\+\+Dist\+\_\+\+Spd}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacenode__c__print__dist__spd_a2f2adf81efb1ce91180667aa9beae7fc}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}.. module:: node_c_print_dist_spd
+   :platform: Unix
+   :synopsis: Python module responsible to print out the distance and speed data
+   
+.. moduleauthor:: Natnael Berhanu Takele
+
+This node subscribes to a ROS topic *posxy_velxy* (published by :mod:`node_a_action_client`) that publishes messages with the two-wheeled robot's position and velocity. It then calculates the distance between the robot's position and a desired position, as well as the average speed of the robot. 
+
+Moreover, the robot's average speed and distance from the target are printed out by using this node. These parameters are taken from the *posxy_velxy* topic as a custom message.
+
+Subscribes to:
+   /posxy_velxy
+   
+ROS parameter:
+   desired_pos_x
+   desired_pos_y\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacenode__c__print__dist__spd_a2f2adf81efb1ce91180667aa9beae7fc}\label{namespacenode__c__print__dist__spd_a2f2adf81efb1ce91180667aa9beae7fc}} 
+\index{node\_c\_print\_dist\_spd@{node\_c\_print\_dist\_spd}!main@{main}}
+\index{main@{main}!node\_c\_print\_dist\_spd@{node\_c\_print\_dist\_spd}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily def node\+\_\+c\+\_\+print\+\_\+dist\+\_\+spd.\+main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function: 
+     - initializes the ROS node
+     - creates an instance of the *Print_Dist_Spd* class
+     - enters into a loop to wait for messages\end{DoxyVerb}
+ 

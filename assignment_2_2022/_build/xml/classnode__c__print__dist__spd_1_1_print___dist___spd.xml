@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classnode__c__print__dist__spd_1_1_print___dist___spd" kind="class" language="Python" prot="public">
+    <compoundname>node_c_print_dist_spd::Print_Dist_Spd</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classnode__c__print__dist__spd_1_1_print___dist___spd_1a53cd734f89b5f0048f7875fd775421c6" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>node_c_print_dist_spd.Print_Dist_Spd::x_target</definition>
+        <argsstring></argsstring>
+        <name>x_target</name>
+        <initializer>=  rospy.get_param(&quot;desired_pos_x&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_c_print_dist_spd.py" line="65" column="1" bodyfile="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_c_print_dist_spd.py" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnode__c__print__dist__spd_1_1_print___dist___spd_1a4b12f4cdde7e3eb49d5f770131fe83c9" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>node_c_print_dist_spd.Print_Dist_Spd::y_target</definition>
+        <argsstring></argsstring>
+        <name>y_target</name>
+        <initializer>=  rospy.get_param(&quot;desired_pos_y&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_c_print_dist_spd.py" line="66" column="1" bodyfile="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_c_print_dist_spd.py" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnode__c__print__dist__spd_1_1_print___dist___spd_1a30b5a4de8f504699c6f3d5e4657c69c7" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>node_c_print_dist_spd.Print_Dist_Spd::x_2w_robot</definition>
+        <argsstring></argsstring>
+        <name>x_2w_robot</name>
+        <initializer>=  msg.msg_pos_x</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_c_print_dist_spd.py" line="69" column="1" bodyfile="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_c_print_dist_spd.py" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnode__c__print__dist__spd_1_1_print___dist___spd_1a44553d55997a089ce303aa212c8bcf3e" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>node_c_print_dist_spd.Print_Dist_Spd::y_2w_robot</definition>
+        <argsstring></argsstring>
+        <name>y_2w_robot</name>
+        <initializer>=  msg.msg_pos_y</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_c_print_dist_spd.py" line="70" column="1" bodyfile="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_c_print_dist_spd.py" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnode__c__print__dist__spd_1_1_print___dist___spd_1a3523d6fd220b9e1b2d950c7ec8c8ae6f" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>node_c_print_dist_spd.Print_Dist_Spd::distance</definition>
+        <argsstring></argsstring>
+        <name>distance</name>
+        <initializer>=  round(math.dist([x_target, y_target], [x_2w_robot, y_2w_robot]),2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_c_print_dist_spd.py" line="73" column="1" bodyfile="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_c_print_dist_spd.py" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnode__c__print__dist__spd_1_1_print___dist___spd_1a4b9e3c85ddc643c543f106a4f3772b32" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>node_c_print_dist_spd.Print_Dist_Spd::vel_x</definition>
+        <argsstring></argsstring>
+        <name>vel_x</name>
+        <initializer>=  msg.msg_vel_x</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_c_print_dist_spd.py" line="76" column="1" bodyfile="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_c_print_dist_spd.py" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnode__c__print__dist__spd_1_1_print___dist___spd_1a382632e53073e2474ebe4727e92a12fa" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>node_c_print_dist_spd.Print_Dist_Spd::vel_y</definition>
+        <argsstring></argsstring>
+        <name>vel_y</name>
+        <initializer>=  msg.msg_vel_y</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_c_print_dist_spd.py" line="77" column="1" bodyfile="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_c_print_dist_spd.py" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnode__c__print__dist__spd_1_1_print___dist___spd_1aa3227670ff44a51e4380708af43401a6" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>node_c_print_dist_spd.Print_Dist_Spd::avg_spd</definition>
+        <argsstring></argsstring>
+        <name>avg_spd</name>
+        <initializer>=  round(math.sqrt(vel_x**2 + vel_y**2),2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_c_print_dist_spd.py" line="80" column="1" bodyfile="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_c_print_dist_spd.py" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnode__c__print__dist__spd_1_1_print___dist___spd_1a2ea2ebc6d7d52779bec6831bb7df0711" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>node_c_print_dist_spd.Print_Dist_Spd::recent_time</definition>
+        <argsstring></argsstring>
+        <name>recent_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_c_print_dist_spd.py" line="87" column="1" bodyfile="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_c_print_dist_spd.py" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classnode__c__print__dist__spd_1_1_print___dist___spd_1a5a85f95cfa465c7f2a5a7292fa4e4fd3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>node_c_print_dist_spd.Print_Dist_Spd::F</definition>
+        <argsstring></argsstring>
+        <name>F</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_c_print_dist_spd.py" line="40" column="1" bodyfile="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_c_print_dist_spd.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnode__c__print__dist__spd_1_1_print___dist___spd_1a423d8756d49bd5e422689cea1ee09296" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>node_c_print_dist_spd.Print_Dist_Spd::sub_pos</definition>
+        <argsstring></argsstring>
+        <name>sub_pos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_c_print_dist_spd.py" line="44" column="1" bodyfile="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_c_print_dist_spd.py" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnode__c__print__dist__spd_1_1_print___dist___spd_1ad3f0805a3b5d184588b24aedc462de7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_c_print_dist_spd.Print_Dist_Spd.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>This is the constructor method of the *Print_Dist_Spd* class.
+It initializes some variables and sets up a subscriber to 
+listen to the *posxy_velxy* topic.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_c_print_dist_spd.py" line="33" column="1" bodyfile="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_c_print_dist_spd.py" bodystart="33" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__c__print__dist__spd_1_1_print___dist___spd_1a737b3fd69ba8d2d66a23389f194357c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_c_print_dist_spd.Print_Dist_Spd.outcome_callback</definition>
+        <argsstring>(self, msg)</argsstring>
+        <name>outcome_callback</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>This is the callback function that gets called each time 
+a new message is received on the *posxy_velxy* topic. 
+
+It extracts the necessary information from the message
+and calculates the distance and average speed. Then, it
+updates the value of robot current velocity and distance 
+from target.
+
+Finally, it prints out the distance and speed information.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_c_print_dist_spd.py" line="46" column="1" bodyfile="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_c_print_dist_spd.py" bodystart="46" bodyend="61"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_c_print_dist_spd.py" line="32" column="1" bodyfile="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_c_print_dist_spd.py" bodystart="32" bodyend="89"/>
+    <listofallmembers>
+      <member refid="classnode__c__print__dist__spd_1_1_print___dist___spd_1ad3f0805a3b5d184588b24aedc462de7b" prot="public" virt="non-virtual"><scope>node_c_print_dist_spd::Print_Dist_Spd</scope><name>__init__</name></member>
+      <member refid="classnode__c__print__dist__spd_1_1_print___dist___spd_1aa3227670ff44a51e4380708af43401a6" prot="public" virt="non-virtual"><scope>node_c_print_dist_spd::Print_Dist_Spd</scope><name>avg_spd</name></member>
+      <member refid="classnode__c__print__dist__spd_1_1_print___dist___spd_1a3523d6fd220b9e1b2d950c7ec8c8ae6f" prot="public" virt="non-virtual"><scope>node_c_print_dist_spd::Print_Dist_Spd</scope><name>distance</name></member>
+      <member refid="classnode__c__print__dist__spd_1_1_print___dist___spd_1a5a85f95cfa465c7f2a5a7292fa4e4fd3" prot="public" virt="non-virtual"><scope>node_c_print_dist_spd::Print_Dist_Spd</scope><name>F</name></member>
+      <member refid="classnode__c__print__dist__spd_1_1_print___dist___spd_1a737b3fd69ba8d2d66a23389f194357c9" prot="public" virt="non-virtual"><scope>node_c_print_dist_spd::Print_Dist_Spd</scope><name>outcome_callback</name></member>
+      <member refid="classnode__c__print__dist__spd_1_1_print___dist___spd_1a2ea2ebc6d7d52779bec6831bb7df0711" prot="public" virt="non-virtual"><scope>node_c_print_dist_spd::Print_Dist_Spd</scope><name>recent_time</name></member>
+      <member refid="classnode__c__print__dist__spd_1_1_print___dist___spd_1a423d8756d49bd5e422689cea1ee09296" prot="public" virt="non-virtual"><scope>node_c_print_dist_spd::Print_Dist_Spd</scope><name>sub_pos</name></member>
+      <member refid="classnode__c__print__dist__spd_1_1_print___dist___spd_1a4b9e3c85ddc643c543f106a4f3772b32" prot="public" virt="non-virtual"><scope>node_c_print_dist_spd::Print_Dist_Spd</scope><name>vel_x</name></member>
+      <member refid="classnode__c__print__dist__spd_1_1_print___dist___spd_1a382632e53073e2474ebe4727e92a12fa" prot="public" virt="non-virtual"><scope>node_c_print_dist_spd::Print_Dist_Spd</scope><name>vel_y</name></member>
+      <member refid="classnode__c__print__dist__spd_1_1_print___dist___spd_1a30b5a4de8f504699c6f3d5e4657c69c7" prot="public" virt="non-virtual"><scope>node_c_print_dist_spd::Print_Dist_Spd</scope><name>x_2w_robot</name></member>
+      <member refid="classnode__c__print__dist__spd_1_1_print___dist___spd_1a53cd734f89b5f0048f7875fd775421c6" prot="public" virt="non-virtual"><scope>node_c_print_dist_spd::Print_Dist_Spd</scope><name>x_target</name></member>
+      <member refid="classnode__c__print__dist__spd_1_1_print___dist___spd_1a44553d55997a089ce303aa212c8bcf3e" prot="public" virt="non-virtual"><scope>node_c_print_dist_spd::Print_Dist_Spd</scope><name>y_2w_robot</name></member>
+      <member refid="classnode__c__print__dist__spd_1_1_print___dist___spd_1a4b12f4cdde7e3eb49d5f770131fe83c9" prot="public" virt="non-virtual"><scope>node_c_print_dist_spd::Print_Dist_Spd</scope><name>y_target</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

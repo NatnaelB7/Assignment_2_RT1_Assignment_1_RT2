@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacenode__a__action__client" kind="namespace" language="Python">
+    <compoundname>node_a_action_client</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacenode__a__action__client_1a91fbee39447a519dc1a15e02d1537a0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_a_action_client.publisher</definition>
+        <argsstring>(msg)</argsstring>
+        <name>publisher</name>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>This function is a callback function that is called whenever 
+a message is received from the *odom* topic. The function 
+extracts the position and velocity information from the 
+message and creates a custom message that contains these 
+parameters.
+
+The function then publishes the custom message to the
+*posxy_velxy* topic.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_a_action_client.py" line="41" column="1" bodyfile="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_a_action_client.py" bodystart="41" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenode__a__action__client_1ae28731f2458a9815683149bf38346fb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_a_action_client.action_client</definition>
+        <argsstring>()</argsstring>
+        <name>action_client</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>This function implements the action client. It creates an instance  
+of the *SimpleActionClient* class and waits for the action server  
+to start.
+
+It then enters into a loop that prompts the user to input the target 
+position. If the user enters *C*, the function cancels the current  
+goal if it exists. Otherwise, it converts the user&apos;s input to float 
+data types and creates a goal message.
+
+Finally, it sends the goal message to the action server.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_a_action_client.py" line="68" column="1" bodyfile="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_a_action_client.py" bodystart="68" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacenode__a__action__client_1a42c52499e7e6ecbcbb00dd4202742754" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_a_action_client.main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>This function is the main function of the script. It initializes 
+the ROS node, creates a publisher *posxy_velxy* and a subscriber
+*odom*. Then, it calls the *action_client()* function.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_a_action_client.py" line="114" column="1" bodyfile="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_a_action_client.py" bodystart="114" bodyend="129"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>.. module:: node_a_action_client
+   :platform: Unix
+   :synopsis: Python module which implements an action client that lets users set or cancel targets (x, y)
+   
+.. moduleauthor:: Natnael Berhanu Takele
+
+This node deals with asking the user to enter the coordinates (x, y) or cancel them that the robot has to reach. It creates a publisher *pub* that publishes a custom message *Posxy_velxy* on the topic *posxy_velxy*. 
+
+The custom message contains four fields *msg_pos_x*, *msg_pos_y*, *msg_vel_x*, *msg_vel_y* that represent the position and velocity of the robot.
+
+Subscribes to:
+   /odom
+
+Publishes to: 
+   /posxy_velxy   
+   
+Action Client:
+   /reaching_goal   </verbatim> </para>
+    </detaileddescription>
+    <location file="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_a_action_client.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

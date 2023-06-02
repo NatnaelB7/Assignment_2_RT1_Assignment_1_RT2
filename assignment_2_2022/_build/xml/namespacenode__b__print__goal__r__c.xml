@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacenode__b__print__goal__r__c" kind="namespace" language="Python">
+    <compoundname>node_b_print_goal_r_c</compoundname>
+    <innerclass refid="classnode__b__print__goal__r__c_1_1_service" prot="public">node_b_print_goal_r_c::Service</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacenode__b__print__goal__r__c_1a5a30d4572437855a372d20e1472d0446" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_b_print_goal_r_c.main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>This function:
+
+      - initializes the node
+      - creates an instance of the *Service* class
+      - awaits messages</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_b_print_goal_r_c.py" line="70" column="1" bodyfile="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_b_print_goal_r_c.py" bodystart="70" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>.. module:: node_b_print_goal_r_c
+   :platform: Unix
+   :synopsis: Python module responsible to print the number of goal reached and cancelled
+   
+.. moduleauthor:: Natnael Berhanu Takele
+
+This node implements a ROS service node. The code receives messages from a topic and a service, and responds with the count of goals that were cancelled and reached. 
+
+The script creates a service that listens to the *reaching_goal* result topic and counts the number of goals that have been cancelled and reached.
+
+Subscribes to:
+   /reaching_goal/result</verbatim> </para>
+    </detaileddescription>
+    <location file="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_b_print_goal_r_c.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

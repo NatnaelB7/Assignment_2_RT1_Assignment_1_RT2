@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacenode__c__print__dist__spd" kind="namespace" language="Python">
+    <compoundname>node_c_print_dist_spd</compoundname>
+    <innerclass refid="classnode__c__print__dist__spd_1_1_print___dist___spd" prot="public">node_c_print_dist_spd::Print_Dist_Spd</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacenode__c__print__dist__spd_1a2f2adf81efb1ce91180667aa9beae7fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_c_print_dist_spd.main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>This function: 
+     - initializes the ROS node
+     - creates an instance of the *Print_Dist_Spd* class
+     - enters into a loop to wait for messages</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_c_print_dist_spd.py" line="89" column="1" bodyfile="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_c_print_dist_spd.py" bodystart="89" bodyend="100"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>.. module:: node_c_print_dist_spd
+   :platform: Unix
+   :synopsis: Python module responsible to print out the distance and speed data
+   
+.. moduleauthor:: Natnael Berhanu Takele
+
+This node subscribes to a ROS topic *posxy_velxy* (published by :mod:`node_a_action_client`) that publishes messages with the two-wheeled robot&apos;s position and velocity. It then calculates the distance between the robot&apos;s position and a desired position, as well as the average speed of the robot. 
+
+Moreover, the robot&apos;s average speed and distance from the target are printed out by using this node. These parameters are taken from the *posxy_velxy* topic as a custom message.
+
+Subscribes to:
+   /posxy_velxy
+   
+ROS parameter:
+   desired_pos_x
+   desired_pos_y</verbatim> </para>
+    </detaileddescription>
+    <location file="/root/Assignment_2/src/Assignment_2_TAKELE_RT1/assignment_2_2022/scripts/node_c_print_dist_spd.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

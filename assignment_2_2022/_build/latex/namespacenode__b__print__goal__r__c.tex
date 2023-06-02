@@ -1,0 +1,42 @@
+\hypertarget{namespacenode__b__print__goal__r__c}{}\doxysection{node\+\_\+b\+\_\+print\+\_\+goal\+\_\+r\+\_\+c Namespace Reference}
+\label{namespacenode__b__print__goal__r__c}\index{node\_b\_print\_goal\_r\_c@{node\_b\_print\_goal\_r\_c}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classnode__b__print__goal__r__c_1_1_service}{Service}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacenode__b__print__goal__r__c_a5a30d4572437855a372d20e1472d0446}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}.. module:: node_b_print_goal_r_c
+   :platform: Unix
+   :synopsis: Python module responsible to print the number of goal reached and cancelled
+   
+.. moduleauthor:: Natnael Berhanu Takele
+
+This node implements a ROS service node. The code receives messages from a topic and a service, and responds with the count of goals that were cancelled and reached. 
+
+The script creates a service that listens to the *reaching_goal* result topic and counts the number of goals that have been cancelled and reached.
+
+Subscribes to:
+   /reaching_goal/result\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacenode__b__print__goal__r__c_a5a30d4572437855a372d20e1472d0446}\label{namespacenode__b__print__goal__r__c_a5a30d4572437855a372d20e1472d0446}} 
+\index{node\_b\_print\_goal\_r\_c@{node\_b\_print\_goal\_r\_c}!main@{main}}
+\index{main@{main}!node\_b\_print\_goal\_r\_c@{node\_b\_print\_goal\_r\_c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily def node\+\_\+b\+\_\+print\+\_\+goal\+\_\+r\+\_\+c.\+main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function:
+
+      - initializes the node
+      - creates an instance of the *Service* class
+      - awaits messages\end{DoxyVerb}
+ 

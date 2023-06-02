@@ -1,0 +1,75 @@
+\hypertarget{namespacenode__a__action__client}{}\doxysection{node\+\_\+a\+\_\+action\+\_\+client Namespace Reference}
+\label{namespacenode__a__action__client}\index{node\_a\_action\_client@{node\_a\_action\_client}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacenode__a__action__client_a91fbee39447a519dc1a15e02d1537a0b}{publisher}} (msg)
+\item 
+def \mbox{\hyperlink{namespacenode__a__action__client_ae28731f2458a9815683149bf38346fb5}{action\+\_\+client}} ()
+\item 
+def \mbox{\hyperlink{namespacenode__a__action__client_a42c52499e7e6ecbcbb00dd4202742754}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}.. module:: node_a_action_client
+   :platform: Unix
+   :synopsis: Python module which implements an action client that lets users set or cancel targets (x, y)
+   
+.. moduleauthor:: Natnael Berhanu Takele
+
+This node deals with asking the user to enter the coordinates (x, y) or cancel them that the robot has to reach. It creates a publisher *pub* that publishes a custom message *Posxy_velxy* on the topic *posxy_velxy*. 
+
+The custom message contains four fields *msg_pos_x*, *msg_pos_y*, *msg_vel_x*, *msg_vel_y* that represent the position and velocity of the robot.
+
+Subscribes to:
+   /odom
+
+Publishes to: 
+   /posxy_velxy   
+   
+Action Client:
+   /reaching_goal   \end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacenode__a__action__client_ae28731f2458a9815683149bf38346fb5}\label{namespacenode__a__action__client_ae28731f2458a9815683149bf38346fb5}} 
+\index{node\_a\_action\_client@{node\_a\_action\_client}!action\_client@{action\_client}}
+\index{action\_client@{action\_client}!node\_a\_action\_client@{node\_a\_action\_client}}
+\doxysubsubsection{\texorpdfstring{action\_client()}{action\_client()}}
+{\footnotesize\ttfamily def node\+\_\+a\+\_\+action\+\_\+client.\+action\+\_\+client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function implements the action client. It creates an instance  
+of the *SimpleActionClient* class and waits for the action server  
+to start.
+
+It then enters into a loop that prompts the user to input the target 
+position. If the user enters *C*, the function cancels the current  
+goal if it exists. Otherwise, it converts the user's input to float 
+data types and creates a goal message.
+
+Finally, it sends the goal message to the action server.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacenode__a__action__client_a42c52499e7e6ecbcbb00dd4202742754}\label{namespacenode__a__action__client_a42c52499e7e6ecbcbb00dd4202742754}} 
+\index{node\_a\_action\_client@{node\_a\_action\_client}!main@{main}}
+\index{main@{main}!node\_a\_action\_client@{node\_a\_action\_client}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily def node\+\_\+a\+\_\+action\+\_\+client.\+main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function is the main function of the script. It initializes 
+the ROS node, creates a publisher *posxy_velxy* and a subscriber
+*odom*. Then, it calls the *action_client()* function.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacenode__a__action__client_a91fbee39447a519dc1a15e02d1537a0b}\label{namespacenode__a__action__client_a91fbee39447a519dc1a15e02d1537a0b}} 
+\index{node\_a\_action\_client@{node\_a\_action\_client}!publisher@{publisher}}
+\index{publisher@{publisher}!node\_a\_action\_client@{node\_a\_action\_client}}
+\doxysubsubsection{\texorpdfstring{publisher()}{publisher()}}
+{\footnotesize\ttfamily def node\+\_\+a\+\_\+action\+\_\+client.\+publisher (\begin{DoxyParamCaption}\item[{}]{msg }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function is a callback function that is called whenever 
+a message is received from the *odom* topic. The function 
+extracts the position and velocity information from the 
+message and creates a custom message that contains these 
+parameters.
+
+The function then publishes the custom message to the
+*posxy_velxy* topic.\end{DoxyVerb}
+ 
